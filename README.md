@@ -23,9 +23,14 @@
 
 上記を避けるために、プロジェクトA 用の v3.8.5 と、プロジェクトB 用の v3.8.5を作る必要がある。これをしてくれるのが virtualenv。<br/>
 
+---
+## 2. 構築手順
+```
+comming soon
+```
 
 
-
+---
 ### 参考資料
 [1] Virtualenv documentation
 https://virtualenv.pypa.io/en/latest/
