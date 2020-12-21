@@ -25,8 +25,29 @@
 
 ---
 ## 2. 構築手順
+今の PC が Mac なので、とりあえず Mac だけ
+
+1. Homebrew を install (自分は zsh なので以下）https://brew.sh/index_ja
 ```
-comming soon
+$ /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+
+2. pyenv, pyenv-virtualenv を install
+```
+$ brew update
+$ brew install pyenv
+$ brew install pyenv-virtualenv
+```
+
+
+3. .zshrc に設定を保存
+```
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+$ echo 'if [ $commands[pyenv] ]; then eval "$(pyenv init -)"; fi' >> ~/.zshrc
+$ echo 'if [ $commands[pyenv] ]; then eval "$(pyenv virtualenv-init -)"; fi' >> ~/.bash_profile
+$ source ~/.zshrc
 ```
 
 
