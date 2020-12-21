@@ -53,7 +53,7 @@ $ source ~/.zshrc
 
 ---
 ### 参考資料
-[1] Virtualenv documentation
+[1] Virtualenv documentation <br/>
 https://virtualenv.pypa.io/en/latest/
 ```
 virtualenv is a tool to create isolated Python environments.
