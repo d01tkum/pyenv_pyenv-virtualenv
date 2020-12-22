@@ -60,6 +60,28 @@ $ source ~/.zshrc
 3. opencv は pyenv-virtualenv の一つの環境に入れると他で使えなかったりする
 
 
+pyenv install -l
+
+pyenv install 3.9.0
+
+python
+$ pyenv global 2.7.18 3.9.0
+
+$ python --version
+Python 2.7.16
+~ takdo:
+$ python3 --version
+Python 3.9.0
+
+
+$ pyenv virtualenv 3.9.0 Workspace
+
+ディレクトリに移動 -> pyenv local <pyenv の version>
+--
+
+
+ls
+
 
 ---
 ### 参考資料
