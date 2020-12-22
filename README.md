@@ -46,9 +46,19 @@ $ brew install pyenv-virtualenv
 $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 $ echo 'if [ $commands[pyenv] ]; then eval "$(pyenv init -)"; fi' >> ~/.zshrc
-$ echo 'if [ $commands[pyenv] ]; then eval "$(pyenv virtualenv-init -)"; fi' >> ~/.bash_profile
+$ echo 'if [ $commands[pyenv] ]; then eval "$(pyenv virtualenv-init -)"; fi' >> ~/.zshrc
 $ source ~/.zshrc
 ```
+
+
+1. system の python を退避させる
+--> build の際などに system の python が使われている時があり、その際に build の失敗などが起きるのを避けるため
+
+2. pyenv global にpython 2, 3 系を入れる
+--> これによって問題が起きる場合もまぁある
+
+3. opencv は pyenv-virtualenv の一つの環境に入れると他で使えなかったりする
+
 
 
 ---
