@@ -27,9 +27,9 @@
 ## 2. 構築手順
 今の PC が Mac なので、とりあえず Mac だけ
 
-1. Homebrew を install (自分は zsh なので以下）https://brew.sh/index_ja
+1. Homebrew を install https://brew.sh/index_ja
 ```
-$ /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 
